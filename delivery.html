@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delivery</title>
+<style>
+	body {
+			background-image: url(background.jpg);
+			margin: 0 auto;
+			font-family: cursive;
+		}
+		header {
+			background-color: #DC2323;
+			color: white;
+			text-transform: uppercase;
+			height: 158px;
+			font-size: 21px;
+			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0;
+  			font-family: Verdana, sans-serif;
+		}
+		#tabat {
+			background-color: #DC2323;
+			text-align: center;
+			border-top: 3px solid black;
+			border-bottom: 3px solid black;
+		}
+		
+		#tabat ul li {
+			display: inline;
+			padding-left: 60px;
+			padding-right: 60px;
+			color: white;
+		}
+		#tabat ul li a:hover {
+			color: white;
+			border-color: 1px solid white;
+			opacity: 1;
+			text-decoration: none;
+		}
+		#tabat ul li a:link {
+			color: white;
+			border-color: 1px solid white;
+		}
+		#tabat ul li a:visited {
+			color: white;
+			border-color: 1px solid white;
+		}
+		#main {
+			width: 70%;
+			margin: 0 auto;
+			height: 1150px;
+			background-color: white;
+			padding-left: 20px;
+			font-size: 20px;
+		}
+		#main ul li {
+			display: inline-block;
+		}
+		input {
+  			width: 70%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+		    box-sizing: border-box;
+		}
+		input[type=submit]{
+			width: 20%;
+			float: right;
+			margin-right: 10px;
+			border-radius: 4px;
+			background-color: red;
+			color: yellow;
+			padding-left: 20px;
+			font-style: bold;
+		}
+		select {
+			width: 70%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+		    box-sizing: border-box;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			height: 50px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 100px;
+		}
+</style>
+</head>
+<body>
+	<header>
+	<div id="fotoja">
+	<img src="Logo-2.jpg" width="200px" height="100px" />
+	<img src="Emri-2.png" height="100px" />
+	</div>
+	<div id="tabat">
+	<ul>
+		<li><b><a href="index.html">Home</a></b></li>
+		<li><b><a href="Meny.html">Menu</a></b></li>
+		<li><b><a href="rreth-nesh.html">Rreth Nesh</a></b></li>
+		<li><b><a href="Kontakt.html">Kontakt</a></b></li>
+		<li><b><a href="form.html">Rezervo</a></b></li>
+	</ul>
+	</div>
+</header><br><br>
+
+<div id="main">
+	<br><br>
+	<ul>
+	<li><h1><a href="rezervo.html">Rezervimi</a></h1></li>
+	<li></li>
+	<li><h1><a href="delivery.html">Delivery</a></h1></li>
+	</ul>
+	<form action="index.html" name="myForm" method="POST" onsubmit="return(validate());">
+	<br><br>
+
+    <p>Ne sa ora doni të ju vi porosia</p>
+    <select name="shteti" required>
+	<option value="-1" selected></option>
+	<option value="MK">08:00</option>
+	<option value="MN">08:30</option>
+	<option value="SR">09:00</option>
+	<option value="XK">09:30</option>
+	<option value="AL">10:00</option>
+	<option value="MK">10:30</option>
+	<option value="MN">11:00</option>
+	<option value="SR">11:30</option>
+	<option value="XK">12:00</option>
+	<option value="AL">12:30</option>
+	<option value="MK">13:00</option>
+	<option value="MN">13:30</option>
+	<option value="SR">14:00</option>
+	<option value="XK">15:00</option>
+	<option value="AL">15:30</option>
+	<option value="MK">16:00</option>
+	<option value="MN">16:30</option>
+	<option value="SR">17:00</option>
+	<option value="MN">17:30</option>
+	<option value="SR">18:00</option>
+	<option value="XK">18:30</option>
+	<option value="AL">19:00</option>
+	<option value="MK">20:30</option>
+	<option value="MN">21:00</option>
+	<option value="SR">21:30</option>
+    </select><br><br>
+    <p>Qka deshironi per te porositur</p>
+    <input type="text" name="kerkesa" required/>
+    
+    <p>Ku deshironi ta dergojme</p>
+    <input type="text" name="adresa" required/>
+
+    <br><br>
+
+    <input type="submit" value="Dergo"/>
+</form>
+</div><br><br>
+		<footer>
+			<p>Copyright by Norik, Muhamet and Jetmir @2020</p>
+		</footer>
+<script>
+	function validate(){
+		if (document.myForm.kerkesa.value == "") {
+
+			alert("Plotesoje kerkesen");
+			document.myForm.name.focus();
+			return false;
+		}
+		if (document.myForm.adresa.value == "") {
+
+			alert("Plotesoje adrsen");
+			document.myForm.surname.focus();
+			return false;
+		}
+		if (document.myForm.name.value == "") {
+			alert("Plotesoje emrin");
+			document.myForm.email.focus();
+			return false;
+		}
+	}
+</script>
+</body>
+</html>
