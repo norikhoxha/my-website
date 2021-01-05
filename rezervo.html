@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rezervo-MePaThika</title>
+<style>
+	body {
+			background-image: url(background.jpg);
+			margin: 0 auto;
+			font-family: cursive;
+		}
+		header {
+			background-color: #DC2323;
+			color: white;
+			text-transform: uppercase;
+			height: 158px;
+			font-size: 21px;
+			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0;
+  			font-family: Verdana, sans-serif;
+		}
+		#tabat {
+			background-color: #DC2323;
+			text-align: center;
+			border-top: 3px solid black;
+			border-bottom: 3px solid black;
+		}
+		
+		#tabat ul li {
+			display: inline;
+			padding-left: 60px;
+			padding-right: 60px;
+			color: white;
+		}
+		#tabat ul li a:hover {
+			color: white;
+			border-color: 1px solid white;
+			opacity: 1;
+			text-decoration: none;
+		}
+		#tabat ul li a:link {
+			color: white;
+			border-color: 1px solid white;
+		}
+		#tabat ul li a:visited {
+			color: white;
+			border-color: 1px solid white;
+		}
+		#main {
+			width: 70%;
+			margin: 0 auto;
+			height: 1150px;
+			background-color: white;
+			padding-left: 20px;
+			font-size: 20px;
+		}
+		#main ul li {
+			display: inline-block;
+		}
+		.dropbtn {
+  		background-color: #4CAF50;
+ 	    color: white;
+ 		padding: 16px;
+ 		font-size: 16px;
+ 		border: none;
+ 		cursor: pointer;
+		}
+
+		.dropbtn:hover, .dropbtn:focus {
+		  background-color: #3e8e41;
+		}
+
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  overflow: auto;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.show {display:block;}
+
+		input [type=text]{
+  			width: 70%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+		    box-sizing: border-box;
+		}
+		input [type=reset]{
+			height: 1%;
+			width: 10%;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			height: 50px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 100px;
+		}
+</style>
+</head>
+<body>
+	<header>
+	<div id="fotoja">
+	<img src="Logo-2.jpg" width="200px" height="100px" />
+	<img src="Emri-2.png" height="100px" />
+	</div>
+	<div id="tabat">
+	<ul>
+		<li><b><a href="index.html">Home</a></b></li>
+		<li><b><a href="Meny.html">Menu</a></b></li>
+		<li><b><a href="rreth-nesh.html">Rreth Nesh</a></b></li>
+		<li><b><a href="Kontakt.html">Kontakt</a></b></li>
+		<li><b><a href="form.html">Rezervo</a></b></li>
+	</ul>
+	</div>
+</header><br><br>
+
+<div id="main">
+	<br><br>
+	<ul>
+	<li><h1><a href="rezervo.html">Rezervimi</a></h1></li>
+	<li></li>
+	<li><h1><a href="delivery.html">Delivery</a></h1></li>
+	</ul>
+	<form onreset="myFunction()">
+	<br><br>
+	<hr>
+	<p>Kur dëshironi për të ngrënë</p>
+	<input type="radio" id="male" name="gender" value="male">
+  	<label for="male">Mengjes</label><br>
+  	<input type="radio" id="female" name="gender" value="female">
+  	<label for="female">Drekë</label><br>
+  	<input type="radio" id="other" name="gender" value="other">
+  	<label for="other">Darkë</label><br><br>
+  	<hr>
+  	<p>Ju lutem na tregoni sa veta jeni ne restoran</p>
+    <input type="radio" id="age1" name="age" value="30">
+    <label for="age1">0-4</label><br>
+    <input type="radio" id="age2" name="age" value="60">
+    <label for="age2">5-10</label><br>  
+    <input type="radio" id="age3" name="age" value="100">
+    <label for="age3">11-20</label><br><br>
+    <hr>
+    <p>Ne sa ora doni ta beni rezervimin</p>
+    <select name="shteti" required>
+	<option value="-1" selected></option>
+	<option value="MK">08:00</option>
+	<option value="MN">08:30</option>
+	<option value="SR">09:00</option>
+	<option value="XK">09:30</option>
+	<option value="AL">10:00</option>
+	<option value="MK">10:30</option>
+	<option value="MN">11:00</option>
+	<option value="SR">11:30</option>
+	<option value="XK">12:00</option>
+	<option value="AL">12:30</option>
+	<option value="MK">13:00</option>
+	<option value="MN">13:30</option>
+	<option value="SR">14:00</option>
+	<option value="XK">15:00</option>
+	<option value="AL">15:30</option>
+	<option value="MK">16:00</option>
+	<option value="MN">16:30</option>
+	<option value="SR">17:00</option>
+	<option value="MN">17:30</option>
+	<option value="SR">18:00</option>
+	<option value="XK">18:30</option>
+	<option value="AL">19:00</option>
+	<option value="MK">20:30</option>
+	<option value="MN">21:00</option>
+	<option value="SR">21:30</option>
+    </select><br>
+    <br>
+    <hr>
+  	<input type="reset">
+</form>
+</div><br><br>
+<footer>
+	<p>Copyright by Norik, Muhamet and Jetmir @2020</p>
+</footer>
+<script>
+function myFunction() {
+  alert("Ju Faleminderrit që na zgjodhët neve");
+}
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunctioni()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunctioni() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+</body>
+</html>
