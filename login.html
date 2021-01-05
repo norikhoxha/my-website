@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kyçu</title>
+<style>
+	body {
+			background-image: url(background.jpg);
+			margin: 0 auto;
+			font-family: cursive;
+		}
+		header {
+			background-color: #DC2323;
+			color: white;
+			text-transform: uppercase;
+			height: 158px;
+			font-size: 21px;
+			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0;
+  			font-family: Verdana, sans-serif;
+		}
+		#tabat {
+			background-color: #DC2323;
+			text-align: center;
+			border-top: 3px solid black;
+			border-bottom: 3px solid black;
+		}
+		
+		#tabat ul li {
+			display: inline;
+			padding-left: 60px;
+			padding-right: 60px;
+			color: white;
+		}
+		#tabat ul li a:hover {
+			color: white;
+			border-color: 1px solid white;
+			opacity: 1;
+			text-decoration: none;
+		}
+		#tabat ul li a:link {
+			color: white;
+			border-color: 1px solid white;
+		}
+		#tabat ul li a:visited {
+			color: white;
+			border-color: 1px solid white;
+		}
+		#main {
+			width: 70%;
+			margin: 0 auto;
+			height: 950px;
+			background-color: white;
+			text-align: center;
+			font-size: 20px;
+		}
+		input {
+  			width: 70%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+		    box-sizing: border-box;
+		}
+		input[type=submit]{
+			width: 20%;
+			float: right;
+			margin-right: 10px;
+			border-radius: 4px;
+			background-color: red;
+			color: yellow;
+			padding-left: 20px;
+			font-style: bold;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			height: 50px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 100px;
+		}
+</style>
+</head>
+<body>
+	<header>
+	<div id="fotoja">
+	<img src="Logo-2.jpg" width="200px" height="100px" />
+	<img src="Emri-2.png" height="100px" />
+	</div>
+	<div id="tabat">
+	<ul>
+		<li><b><a href="index.html">Home</a></b></li>
+		<li><b><a href="Meny.html">Menu</a></b></li>
+		<li><b><a href="rreth-nesh.html">Rreth Nesh</a></b></li>
+		<li><b><a href="Kontakt.html">Kontakt</a></b></li>
+		<li><b><a href="form.html">Rezervo</a></b></li>
+	</ul>
+	</div>
+</header><br><br>
+<div id="main">
+	<br><br>
+	<h1>Kyçuni këtu</h1>
+<form action="rezervo.html" name="myForm" method="POST" onsubmit="return(validate());">
+    Email
+<input type="email" name="email" required/><br><br>
+   Password
+<input type="password" name="password" required/><br><br>
+<input type="submit" value="Dergo"/>
+</div><br><br>
+		<footer>
+			<p>Copyright by Norik, Muhamet and Jetmir @2020</p>
+		</footer>
+<script>
+	function validate(){
+		if (document.myForm.email.value == "") {
+			alert("Plotesoje email-in");
+			document.myForm.email.focus();
+			return false;
+		}
+		if (document.myForm.password.value == "" || document.myForm.password.value.length < 8) {
+			alert("Plotesoje password-in");
+			document.myForm.password.focus();
+			return false;
+		}
+	}
+	
+</script>
+</body>
+</html>
